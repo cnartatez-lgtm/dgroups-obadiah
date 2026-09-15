@@ -1,0 +1,75 @@
+{
+  "timezone": "Europe/Paris",
+  "lessons": [
+    {
+      "id": "obadiah-01",
+      "passage": "Obadiah 1:1–4",
+      "start": 1,
+      "end": 4,
+      "title": "The pride of your heart",
+      "releaseAt": "2026-09-15T22:00:00+02:00",
+      "teachingDate": null,
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-02",
+      "passage": "Obadiah 1:5–9",
+      "start": 5,
+      "end": 9,
+      "title": "When every refuge fails",
+      "releaseAt": "2026-09-20T00:00:00+02:00",
+      "teachingDate": "2026-09-17",
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-03",
+      "passage": "Obadiah 1:10–11",
+      "start": 10,
+      "end": 11,
+      "title": "Violence against your brother",
+      "releaseAt": "2026-09-27T00:00:00+02:00",
+      "teachingDate": "2026-09-24",
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-04",
+      "passage": "Obadiah 1:12–14",
+      "start": 12,
+      "end": 14,
+      "title": "Do not stand aside",
+      "releaseAt": "2026-10-04T00:00:00+02:00",
+      "teachingDate": "2026-10-01",
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-05",
+      "passage": "Obadiah 1:15–16",
+      "start": 15,
+      "end": 16,
+      "title": "As you have done",
+      "releaseAt": "2026-10-11T00:00:00+02:00",
+      "teachingDate": "2026-10-08",
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-06",
+      "passage": "Obadiah 1:17–18",
+      "start": 17,
+      "end": 18,
+      "title": "In Mount Zion, escape",
+      "releaseAt": "2026-10-18T00:00:00+02:00",
+      "teachingDate": "2026-10-15",
+      "status": "awaiting-content"
+    },
+    {
+      "id": "obadiah-07",
+      "passage": "Obadiah 1:19–21",
+      "start": 19,
+      "end": 21,
+      "title": "The kingdom will be Yahweh’s",
+      "releaseAt": "2026-10-25T00:00:00+02:00",
+      "teachingDate": "2026-10-22",
+      "status": "awaiting-content"
+    }
+  ]
+}

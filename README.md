@@ -1,0 +1,3 @@
+# D-Groups · Obadiah
+
+Public study site generated from the private pastoral source on `eden-ai`. Future commentary drafts are not stored in this repository.
