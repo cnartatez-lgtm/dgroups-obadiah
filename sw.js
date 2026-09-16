@@ -1,5 +1,5 @@
 // Cache only public reading resources. Never store a gated lesson or its images.
-const CACHE='obadiah-public-v6';
+const CACHE='obadiah-public-v7';
 const FILES=['','index.html','styles.css','app.js','study.js','data.json','references.json','assets/fonts.css','assets/dgroups.png','assets/favicon.svg','assets/eic-logo-light.png','assets/eic-logo-dark.png','assets/obadiah-engraving.webp','assets/concept-pride-false-security.webp','assets/concept-responsibility-others.webp','assets/concept-day-of-yahweh.webp','assets/concept-restoration-kingdom.webp'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(path=>new URL(path,self.registration.scope)))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('obadiah-public-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

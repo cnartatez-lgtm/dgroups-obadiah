@@ -1,4 +1,4 @@
-import {sections, pillars, glossary, analyze, matches} from './study.js';
+import {sections, pillars, glossary, analyze, matches} from './study.js?v=7';
 const $ = s => document.querySelector(s);
 const escape = s => String(s ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shapes = {
