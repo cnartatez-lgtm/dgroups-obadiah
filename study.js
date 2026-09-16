@@ -44,5 +44,9 @@ export function tokens(text) {return text.toLowerCase().match(/[a-z]+(?:[’'][a
 export function matches(text,forms) {return tokens(text).filter(w=>forms.includes(w)).length;}
 export function analyze(verses,category='keywords') {
  const entries=category==='keywords'?glossary:category==='actions'?actions.map(([word,forms])=>({word,forms})):pronouns.map(word=>({word,forms:[word]}));
- return entries.map(entry=>{const distribution=sections.map(s=>Object.entries(verses).filter(([v])=>+v>=s.start&&+v<=s.end).reduce((n,[,t])=>n+matches(t,entry.forms),0));return {...entry,distribution,count:distribution.reduce((a,b)=>a+b,0),verseNumbers:Object.entries(verses).filter(([,t])=>matches(t,entry.forms)).map(([v])=>+v)};}).filter(e=>e.count).sort((a,b)=>b.count-a.count||a.word.localeCompare(b.word));
+ return entries.map(entry=>{
+   const perVerse=Array.from({length:21},(_,index)=>matches(verses[String(index+1)]||'',entry.forms));
+   const distribution=sections.map(section=>perVerse.slice(section.start-1,section.end).reduce((total,count)=>total+count,0));
+   return {...entry,perVerse,distribution,count:perVerse.reduce((total,count)=>total+count,0),verseNumbers:perVerse.map((count,index)=>count?index+1:null).filter(Boolean)};
+ }).filter(entry=>entry.count).sort((a,b)=>b.count-a.count||a.word.localeCompare(b.word));
 }
